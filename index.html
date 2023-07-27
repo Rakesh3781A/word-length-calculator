@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="cont">
+            <h1>Lottery Number Generator</h1>
+            <h5>Click the button to generate 6 random numbers between 1 to 45.</h5>
+            <button onclick="generate()">Generate Random Number</button>
+        </div>
+        <div class="container">
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+        </div>
+    </div>
+
+    <script>
+        function generate() {
+            var allbox = document.getElementsByClassName("box");
+
+            for (var i = 0; i < allbox.length; i++) {
+                var num = Math.floor(Math.random() * 45) + 1;
+                allbox[i].innerHTML = num;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

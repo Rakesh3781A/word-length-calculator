@@ -1,1 +1,1 @@
-# word-length-calculator
+# lottery-num
